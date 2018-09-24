@@ -128,7 +128,7 @@ class ACR122Reader extends Reader {
 
 		try {
 
-			response = await this.control(packet, 2);
+			response = await this.transmit(packet, 2);
 
 			this.logger.info('response received', response);
 
